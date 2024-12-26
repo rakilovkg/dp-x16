@@ -11,24 +11,27 @@
   <body>
     <header class="header">
       <img class="logo" src="logo.svg" alt="DP Logo">
-      <nav class="nav">
-        <a>General</a>
-        <a>Features</a>
-        <a>Download</a>
-        <a>About</a>
+      <nav class="nav" id="nav">
+        <div class="icon-container">
+          <img id="close" class="icon-close" alt="x" src="x-square-fill.svg">
+        </div>
+        <a href="#dp-x16">DP x16</a>
+        <a href="#features">Features</a>
+        <a href="#download">Download</a>
+        <a href="#about">About</a>
       </nav>
       <nav class="nav-menu">
-        <img src="list.svg" alt="Navigation menu" class="nav-menu-icon">
+        <img id="list" src="list.svg" alt="Navigation menu" class="nav-menu-icon">
       </nav>
     </header>
     <main class="main">
-      <section class="section">
+      <section class="section" id="dp-x16">
         <h1 class="fade-slide">DP x16</h1>
         <h2 class="fade-slide">World's Most Innovative VST</h2>
         <img class="vst-gui fade-slide" alt="X16 DP" src="DP x16.png">
         <p class="p dark fade-slide">DP x16 is a cutting-edge VST (Virtual Studio Technology) plugin designed for modern music producers, sound designers, and audio engineers seeking to push the boundaries of creative sound manipulation. A versatile powerhouse, it blends classic analog warmth with futuristic digital processing, delivering an expansive range of dynamic and complex textures.</p>
       </section>
-      <section class="section features-section">
+      <section class="section features-section" id="features">
         <h2>16-Slot Signal Chain</h2>
         <div class="features-container">
           <div class="features-paragraph-container">
@@ -76,7 +79,7 @@
           </div>
         </div>
       </section>
-      <section class="section email-section">
+      <section class="section email-section" id="download">
         <h2>Get DP x16 Now</h2>
         <form class="email-form">
           <p>Send us your email and you will receive a link to download the latest version of DP x16</p>
@@ -89,7 +92,7 @@
         </form>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="about">
       <p>DP | Innovating Solutions for Audio Design</p>
       <p>&copy; 2024 DP. All Rights Reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
       <address>Email: dp at audioworks dot com</address>

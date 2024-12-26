@@ -160,6 +160,10 @@ body {
   margin-top: 4em;
 }
 
+#list:hover, #close:hover {
+  cursor: pointer;
+}
+
 .features-section:nth-child(even) .features-container {
   flex-direction: row-reverse;
 }
@@ -186,9 +190,54 @@ body {
   content: "";
 }
 
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: dodgerblue;
+}
+
+a:active {
+  color: red;
+}
+
+.icon-container {
+  display: none;
+  text-align: right;
+}
+
+.icon-close {
+  width: 1.5em;
+}
+
 @media (width < 750px) {
+  .icon-container {
+    display: block;
+  }
+
   .nav {
     display: none;
+    flex-direction: column;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    background-color: rgb(66, 66, 66);
+    padding: 1em;
+    border-left: 2px solid white;
+  }
+
+  .nav a {
+    padding-right: 0;
+    border: 0 !important;
+    margin-right: 2em;
   }
 
   .nav-menu {
@@ -217,12 +266,16 @@ body {
   }
 }
 
-nav a {
+.nav {
+  display: flex;
+}
+
+.nav a {
   padding-right: 1em;
   border-right: 1px solid gray;
 }
 
-nav a:first-child {
+.nav a:first-child {
   padding-left: 1em;
   border-left: 1px solid gray;
 }
